@@ -1,0 +1,25 @@
+1) Time Spent on Syntax & Structure vs. Actual Programming
+I spent quite a bit of time familiarizing myself with the specific syntax and environment of Processing and p5.js before I could be truly productive. Early on, I found myself wrestling with function names like setup() or draw(), as well as the intricacies of how p5.js handles rendering, especially for 3D and shader work. Eventually, I transitioned from focusing on syntax details to the actual process of coding and experimenting. In the end, I would estimate maybe half of my initial time went into fully understanding the environment's structure, while the other half was coding, tweaking, and building features. This learning curve may show up in the final result, since once I understood the environment, I was able to implement more ambitious ideas quickly.
+
+2) Successes & Frustrations with Processing/p5.js
+One major success was how quickly p5.js let me see visual feedback for my ideas. For instance, hooking up an audio file and analyzing it with p5.FFT or creating a custom shader with createShader() felt fairly straightforward once I got the hang of it. A frustration was trying to debug issues that showed up with subtle logic or shader errors where small mistakes can result in nothing rendering or just a blank screen. Another area of frustration was dealing with 3D transformations, especially if I forgot to use push() or pop() in the right places, which sometimes caused unpredictable changes to objects.
+
+3) Compare & Contrast OOP vs. Procedural
+
+    Similarities: Both OOP and Procedural programming aim to break down large problems into manageable pieces and organize code so it's more understandable. You can write step-by-step instructions in both, and you can group common logic for reuse.
+    Differences: In OOP, data and behaviors are bundled together into objects, and you often rely on methods and properties living inside these objects. In Procedural programming, you write functions (or procedures) that act on data you pass around. State in OOP typically lives inside objects, while in Procedural you have data structures you pass into functions. OOP also fosters concepts like inheritance, which is less common in a strictly procedural style.
+
+4) Concepts Solidified in My Final Project
+Managing timing and state across frames in a dynamic environment really clicked for me in this project. I learned how to use millis() or a uniform variable to keep track of animation, and how to feed data from the CPU side (like FFT values) into the GPU through shader uniforms. Another big concept was learning how transformations like rotate, translate, or scale in p5.js can stack up if not carefully undone. Also, having a better grasp on audio analysis was important; I learned how to interpret bass, mid, treble energies and how to apply them to visuals.
+
+5) Did I Resolve My Own Bugs? Tricks and Debugging
+Yes, I did. One of my main debugging strategies was to systematically remove parts of my code until something worked again, then add pieces back in to isolate the issue. For shader-related bugs, I used the web console to check for errors about uniform names or syntax. Another trick was logging values in the fragment or vertex shader by outputting them as colors, though that's limited if it's a big project. Finally, I used console.log() for uniform parameters in JavaScript to confirm that what I was passing to the shader was valid.
+
+6) Milestone and Whether I Reached It
+My core milestone was to create an audio-reactive scene that wasn't just random, but had some aesthetic coherence. I did reach that: a main shape that reacts to the music, plus user interactivity. Along the way, I decided to add some kaleidoscopic patterns and small interactive touches. I was able to hit that milestone but a few extra features like more advanced camera controls or sophisticated 3D collision didn't make it in due to time constraints.
+
+7) Most Proud of in My Final Project
+I am proud that the result feels cohesive. I enjoyed seeing the sphere shift and distort to the audio, and I like that users can interact by rotating the scene and zooming in or out. Although it's not super advanced in terms of game design or complex geometry, it still demonstrates a neat synergy between audio and visuals.
+
+8) Future Plans for Programming
+I do plan on continuing to use JavaScript-based libraries for creative and data visualization projects. It's fun to see immediate results on a web page without a lot of setup. I'll likely build on these skills if I dive into more advanced frameworks like Three.js or if I pick up new classes related to computer graphics. It also ties into other areas where I'd like to create interactive prototypes or show dynamic data in a visually compelling way.
